@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Pruebas de entradas y dibujo en canvas</title>
+	</head>
+	<body>
+		<h1>Pruebas de entradas y boton con canvas</h1>
+		<p>
+			<p>
+				<a>Selecciona para dibujar : </a>
+				<select id="selectorLapiz">
+					<option selected value="1">Flechas</option>
+					<option value="2">Ratón</option>
+				</select>
+			</p>
+
+			<p>
+				<a>Selecciona un color : </a>
+				<select id="selectorColor">
+						<option value = "1">Verde</option>
+						<option value = "2">Rojo</option>
+						<option value = "3">Azul</option>
+						<option selected value = "4">Negro</option>
+				</select>
+			</p>
+			<input type="button" id="botonCambiarConfiguracion" value="Cambiar"/> </input>
+
+			<p>
+				<a>Configuración actual : </a>
+				<a id="lapizActual">Flechas</a>
+				<a> - </a>
+				<a id="colorActual">Negro</a>
+			</p>
+		</p>
+		<canvas id="tapizCanvas" width="300" height="300"></canvas>
+		<p id="mensajeAlerta">Comenzar</p>
+		<script src="canvasFlechasRaton.js"></script>
+	</body>
+</html>
